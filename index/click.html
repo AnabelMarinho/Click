@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: rgb(236, 175, 43);">Click na imagem</h1>
+    <img src="acd28cb246e3603d219dd48926806e194195375c_00.jpg" id="imagem" alt="Imagem"> 
+    <audio src="audo_fofo.mp3" id="audio"></audio>
+     
+    
+
+    <style>
+        img{
+            cursor: pointer;
+            
+        }
+
+        h1{
+            margin: center;
+        }
+        
+        img:hover{
+            transform: scale(1.05);
+           
+        }
+    </style>
+    <script>
+  document.addEventListener('DOMContentLoaded', function() {
+  var imagem = document.getElementById('imagem');
+  var audio = document.getElementById('audio');
+  
+  imagem.addEventListener('click', function() {
+    audio.play();
+  });
+});
+    </script>
+</body>
+</html>
